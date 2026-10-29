@@ -1,0 +1,110 @@
+[
+    {
+    "id": 1,
+    "image": "mini-fries-shop/public/images/Classic-Fries.jpg",
+    "name": "Classic Fries",
+    "category": "Fries",
+    "description": "Golden, crispy potato fries lightly seasoned with sea salt. Our all-time bestseller.",
+    "specification": "Regular, 120 g • Lightly salted",
+    "rating": 4.7,
+    "price": 59,
+    "quantity": 25
+    },
+
+    {
+    "id": 2,
+    "image": "mini-fries-shop/public/images/Cheese-Fries.jpg",
+    "name": "Cheese Fries",
+    "category": "Fries",
+    "description": "Crispy fries smothered in warm, creamy cheese sauce.",
+    "specification": "Regular, 150 g • Cheddar cheese sauce",
+    "rating": 4.8,
+    "price": 89,
+    "quantity": 18
+    },
+
+    {
+    "id": 3,
+    "image": "mini-fries-shop/public/images/Sweet-Potato_Fries.jpg",
+    "name": "Sweet Potato Fries",
+    "category": "Fries",
+    "description": "Naturally sweet, crispy-edged sweet potato fries. A lighter twist on the classic.",
+    "specification": "Regular, 120 g • Sweet potato",
+    "rating": 4.5,
+    "price": 79,
+    "quantity": 4
+    },
+
+    {
+    "id": 4,
+    "image": "mini-fries-shop/public/images/Curly-Fries.jpg",
+    "name": "Curly Fries",
+    "category": "Fries",
+    "description": "Spiral-cut fries with a spicy, seasoned coating. Fun to eat and extra crunchy.",
+    "specification": "Regular, 130 g • Spicy seasoning",
+    "rating": 4.4,
+    "price": 75,
+    "quantity": 12
+    },
+
+    {
+     "id": 5,
+    "image": "mini-fries-shop/public/images/Garlic-Parmesan-Fries.jpg",
+    "name": "Garlic Parmesan Fries",
+    "category": "Fries",
+    "description": "Hot fries tossed in roasted garlic butter and finished with grated parmesan.",
+    "specification": "Regular, 140 g • Garlic, parmesan, parsley",
+    "rating": 4.9,
+    "price": 95,
+    "quantity": 3
+    },
+
+    {
+    "id": 6,
+    "image": "mini-fries-shop/public/images/Ketchup-Dip.jpg",
+    "name": "Ketchup Dip",
+    "category": "Sauces",
+    "description": "Classic tomato ketchup in a dipping cup.",
+    "specification": "30 ml cup",
+    "rating": 4.2,
+    "price": 15,
+    "quantity": 40
+    },
+
+    {
+        "id": 7,
+    "image": "mini-fries-shop/public/images/Garlic-Mayo-Dip.jpg",
+    "name": "Garlic Mayo Dip",
+    "category": "Sauces",
+    "description": "Creamy mayonnaise blended with fresh garlic. Perfect with any fries.",
+    "specification": "30 ml cup",
+    "rating": 4.6,
+    "price": 25,
+    "quantity": 35
+    },
+    
+    {
+    "id": 8,
+    "image": "mini-fries-shop/public/images/Iced-Tea.jpg",
+    "name": "Iced Tea",
+    "category": "Drinks",
+    "description": "Refreshing lemon iced tea served over ice.",
+    "specification": "16 oz cup",
+    "rating": 4.3,
+    "price": 30,
+    "quantity": 20
+    },
+
+    {
+    "id": 9,
+    "image": "mini-fries-shop/public/images/Combo.jpg",
+    "name": "Fries & Drink Combo",
+    "category": "Combos",
+    "description": "A regular Classic Fries with any dip and a 16 oz iced tea. Great value.",
+    "specification": "Classic Fries + 1 dip + Iced Tea",
+    "rating": 4.8,
+    "price": 99,
+    "quantity": 15
+    }
+
+]
