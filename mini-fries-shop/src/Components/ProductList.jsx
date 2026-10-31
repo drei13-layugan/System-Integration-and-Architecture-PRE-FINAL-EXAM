@@ -1,61 +1,48 @@
-import { Link, useParams } from "react-router-dom";
-import ProductControls from "./ProductControls.jsx";
-import { LOW_STOCK_THRESHOLD, FALLBACK_IMAGE } from "../constants.js";
+import { useState } from "react";
+import ProductCard from "./ProductCard.jsx";
+import TotalsSummary from "./TotalsSummary.jsx";
 
-function ProductDetail({ products, actions }) {
-  const { id } = useParams();
-  const product = products.find((p) => p.id === Number(id));
+function ProductList({ products, actions }) {
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  if (!product) {
-    return (
-      <section>
-        <p className="empty">Product not found.</p>
-        <Link to="/" className="details-link">← Back to menu</Link>
-      </section>
-    );
-  }
+  const categories = ["All", ...new Set(products.map((p) => p.category))];
 
-  const subtotal = product.price * product.quantity;
-  const isLowStock = product.quantity < LOW_STOCK_THRESHOLD;
+  const visibleProducts =
+    selectedCategory === "All"
+      ? products
+      : products.filter((p) => p.category === selectedCategory);
 
   return (
-    <section className="detail">
-      <Link to="/" className="details-link">← Back to menu</Link>
+    <section>
+      <TotalsSummary products={products} />
 
-      <div className="detail-layout">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="detail-image"
-          onError={(e) => { e.currentTarget.src = FALLBACK_IMAGE; }}
-        />
-
-        <div className="detail-info">
-          <div className="card-top">
-            <span className="badge">{product.category}</span>
-            {isLowStock && <span className="badge badge-low">Low Stock</span>}
-          </div>
-
-          <h2>{product.name}</h2>
-          <p className="rating">★ {Number(product.rating).toFixed(1)} / 5</p>
-
-          <h4>Description</h4>
-          <p>{product.description}</p>
-
-          <h4>Specification</h4>
-          <p>{product.specification}</p>
-
-          <dl className="card-figures detail-figures">
-            <div><dt>Price</dt><dd>₱{product.price.toFixed(2)}</dd></div>
-            <div><dt>Quantity</dt><dd className={isLowStock ? "text-low" : ""}>{product.quantity}</dd></div>
-            <div><dt>Subtotal</dt><dd>₱{subtotal.toFixed(2)}</dd></div>
-          </dl>
-
-          <ProductControls product={product} actions={actions} />
-        </div>
+      <div className="toolbar">
+        <label htmlFor="category-filter">Filter by category:</label>
+        <select
+          id="category-filter"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+        >
+          {categories.map((category) => (
+            <option key={category} value={category}>{category}</option>
+          ))}
+        </select>
+        <span className="result-count">
+          {visibleProducts.length} product{visibleProducts.length !== 1 && "s"}
+        </span>
       </div>
+
+      {visibleProducts.length === 0 ? (
+        <p className="empty">No products in this category.</p>
+      ) : (
+        <div className="grid">
+          {visibleProducts.map((product) => (
+            <ProductCard key={product.id} product={product} actions={actions} />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
 
-export default ProductDetail;
+export default ProductList;
