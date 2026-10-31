@@ -1,7 +1,7 @@
 [
     {
     "id": 1,
-    "image": "mini-fries-shop/public/images/classic-fries.jpg",
+    "image": "/images/Classic-Fries.jpg",
     "name": "Classic Fries",
     "category": "Fries",
     "description": "Golden, crispy potato fries lightly seasoned with sea salt. Our all-time bestseller.",
@@ -13,7 +13,7 @@
 
     {
     "id": 2,
-    "image": "mini-fries-shop/public/images/Cheese-Fries.jpg",
+    "image": "/images/Cheese-Fries.jpg",
     "name": "Cheese Fries",
     "category": "Fries",
     "description": "Crispy fries smothered in warm, creamy cheese sauce.",
@@ -25,7 +25,7 @@
 
     {
     "id": 3,
-    "image": "mini-fries-shop/public/images/Sweet-Potato_Fries.jpg",
+    "image": "/images/Sweet-Potato_Fries.jpg",
     "name": "Sweet Potato Fries",
     "category": "Fries",
     "description": "Naturally sweet, crispy-edged sweet potato fries. A lighter twist on the classic.",
@@ -37,7 +37,7 @@
 
     {
     "id": 4,
-    "image": "mini-fries-shop/public/images/Curly-Fries.jpg",
+    "image": "/images/Curly-Fries.jpg",
     "name": "Curly Fries",
     "category": "Fries",
     "description": "Spiral-cut fries with a spicy, seasoned coating. Fun to eat and extra crunchy.",
@@ -49,7 +49,7 @@
 
     {
      "id": 5,
-    "image": "mini-fries-shop/public/images/Garlic-Parmesan-Fries.jpg",
+    "image": "/images/Garlic-Parmesan-Fries.jpg",
     "name": "Garlic Parmesan Fries",
     "category": "Fries",
     "description": "Hot fries tossed in roasted garlic butter and finished with grated parmesan.",
@@ -61,7 +61,7 @@
 
     {
     "id": 6,
-    "image": "mini-fries-shop/public/images/Ketchup-Dip.jpg",
+    "image": "/images/Ketchup-Dip.jpg",
     "name": "Ketchup Dip",
     "category": "Sauces",
     "description": "Classic tomato ketchup in a dipping cup.",
@@ -73,7 +73,7 @@
 
     {
         "id": 7,
-    "image": "mini-fries-shop/public/images/Garlic-Mayo-Dip.jpg",
+    "image": "/images/Garlic-Mayo-Dip.jpg",
     "name": "Garlic Mayo Dip",
     "category": "Sauces",
     "description": "Creamy mayonnaise blended with fresh garlic. Perfect with any fries.",
@@ -85,7 +85,7 @@
     
     {
     "id": 8,
-    "image": "mini-fries-shop/public/images/Iced-Tea.jpg",
+    "image": "/images/Iced-Tea.jpg",
     "name": "Iced Tea",
     "category": "Drinks",
     "description": "Refreshing lemon iced tea served over ice.",
@@ -97,7 +97,7 @@
 
     {
     "id": 9,
-    "image": "mini-fries-shop/public/images/Combo.jpg",
+    "image": "/images/Combo.jpg",
     "name": "Fries & Drink Combo",
     "category": "Combos",
     "description": "A regular Classic Fries with any dip and a 16 oz iced tea. Great value.",
